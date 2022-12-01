@@ -10,6 +10,7 @@ def evaluate_calorie_count(count: int, top3: List[int]):
     elif count > top3[2]:
         top3[2] = count
 
+
 def find_top_three_calorie_counts(data: List[str]) -> List[str]:
     top_three = [float('-inf') for i in range(3)]
     
@@ -21,7 +22,6 @@ def find_top_three_calorie_counts(data: List[str]) -> List[str]:
             continue
 
         current_total += int(line.strip())
-            
     return top_three
 
 
