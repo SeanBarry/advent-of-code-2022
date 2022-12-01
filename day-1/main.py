@@ -1,5 +1,5 @@
 def evaluate_calorie_count(count, top3):
-    if count < top3[2]:
+    if count <= top3[2]:
         return
     elif count > top3[0]:
         top3[2], top3[1], top3[0] = top3[1], top3[0], count
