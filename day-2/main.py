@@ -25,12 +25,11 @@ def part_two(data):
         score += mapping[fixture]
     return score
 
-if __name__ == '__main__':
-    with open('./data.txt') as data:
-        rounds = [line.rstrip() for line in data]
-        one = part_one(rounds)
-        two = part_two(rounds)
+with open('./data.txt') as data:
+    rounds = [line.rstrip() for line in data]
+    one = part_one(rounds)
+    two = part_two(rounds)
 
-        print(f'Score for ONE is: {one}')
-        print(f'Score for TWO is: {two}')
+    print(f'Score for ONE is: {one}')
+    print(f'Score for TWO is: {two}')
 
